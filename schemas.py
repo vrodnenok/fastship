@@ -2,7 +2,9 @@ from pydantic import BaseModel
 import datetime as _datetime
 
 class UserBase(BaseModel):
+    username : str
     email : str
+    group : str
 
 class UserRequest(UserBase):
     password: str
